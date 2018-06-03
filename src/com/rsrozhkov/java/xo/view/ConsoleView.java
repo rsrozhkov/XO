@@ -9,6 +9,8 @@ import java.util.Scanner;
 public class ConsoleView {
 
     private final String LINE_CHARACTER = "~";
+    private final int BOARD_SIZE = 3;
+    private final int LINE_SIZE = 3;
 
     protected final GameController gameController;
 
@@ -31,7 +33,7 @@ public class ConsoleView {
     }
 
     public void showBoard() {
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < BOARD_SIZE; i++) {
             showBoardLine(i);
             showLine(LINE_SIZE);
         }
@@ -45,15 +47,16 @@ public class ConsoleView {
 
     protected void showLine(int size) {
         for (int i = 0; i < size; i++) {
-            System.out.println(LINE_CHARACTER);
+            System.out.print(LINE_CHARACTER);
         }
         System.out.println();
     }
 
     private void showBoardLine(int row) {
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < BOARD_SIZE; i++) {
             System.out.print(gameController.getBoard().getFigure(row,i));
         }
+        System.out.println();
     }
 
     private int getCoordinate(final String coordinateName) {

@@ -1,10 +1,12 @@
 package com.rsrozhkov.java.xo.model;
 
-public class Figure {
+public enum Figure {
+
+    X("X"),O("O");
 
     private final String figure;
 
-    public Figure(final String figure) {
+    Figure(final String figure) {
         this.figure = figure;
     }
 
