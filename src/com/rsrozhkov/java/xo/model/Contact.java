@@ -25,6 +25,7 @@ public class Contact {
                 .phone("sdas")
                 .address("ds")
                 .build();
+        System.out.println(contact.surname);
 
     }
 }
