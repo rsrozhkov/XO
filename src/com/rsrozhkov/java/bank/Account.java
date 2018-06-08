@@ -68,7 +68,7 @@ class Account {
             return Account.this.deposit(amountToDeposit);
         }
 
-        public void showCardInfo() {
+        public void getCardInfo() {
             System.out.println("Account: " + this.getAccountNumber() + ", Owner: " + this.getAccountOwner()
                     + "\nCard: " + this.getNumber() + ", Owner: " + this.getOwner() + ", amount: " + this.getAmount());
             System.out.println();

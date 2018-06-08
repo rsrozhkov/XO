@@ -8,17 +8,17 @@ public class Main {
         final Account.Card card2 = account.new Card("8888 8888 8888 8888","Sorokina Darya");
 
 
-        card1.showCardInfo();
-        card2.showCardInfo();
+        card1.getCardInfo();
+        card2.getCardInfo();
         card1.deposit(1000);
-        card1.showCardInfo();
-        card2.showCardInfo();
+        card1.getCardInfo();
+        card2.getCardInfo();
         card1.withdraw(500);
-        card1.showCardInfo();
-        card2.showCardInfo();
+        card1.getCardInfo();
+        card2.getCardInfo();
         card2.withdraw(250);
-        card1.showCardInfo();
-        card2.showCardInfo();
+        card1.getCardInfo();
+        card2.getCardInfo();
 
 
     }
